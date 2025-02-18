@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Preguntas</title>
+        <style>
+            body{
+                background-color: yellow;
+            }
+            body h1{
+                display: flex;
+                justify-content: end;
+                background-color: blueviolet;
+                
+            }
+            body h2{
+                display: flex;
+                justify-content: end;
+                background-color: chartreuse;
+            }
+            body h3{
+                display: flex;
+                justify-content: end;
+                background-color: darkorange;
+            }
+            body h4{
+                display: flex;
+                justify-content: end;
+                background-color: darkred;
+            }
+
+            body p{
+                color: darkblue;
+            }
+
+            #box {
+                width: 200px;
+                padding: 25px;
+                border: 25px solid navy;
+                margin: 25px;
+                background-color: lightblue;
+            }
+
+            #font {
+                color:green;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Preguntas</h1>
+        <h2>HTML</h2>
+            <h3>Introduction</h3>
+                <h4>What is HTML?</h4>
+                    <p>HTML es un lenguaje de diseño que se utiliza principalmente para estructurar el diseño de una página web. Es decir es una herramienta fron-end que nos permite estructurar un sitio web.</p>
+                <h4>Explain the head and the body tags.</h4>
+                    <p>La etiqueta "head" nos sirve para describir la meta información que tendrá nuestra página web; esto podría ser como el nombre del sitio web o información para ayudar al motor de búsqueda.
+                        En cuanto a la etiqueta "body" nos sirve para describir el contenido de nuestra página web; es decir, todo lo que se mostrará en la página web; aqui podemos encontrar las etiquetas "a","h1","p", entre otras.
+                    </p>
+            <br/>
+            <h3>Basic Tags</h3>
+                <h4>Explain the section, article, aside, header, footer tag?</h4>
+                    <p>Section: Es una etiqueta que se utiliza para dividir el contenido de una página web en diferentes secciones. Cada sección puede tener su propio header, footer, etc.</p>
+                    <p>Article:Es usado principalmente para crear un blog, un post, una noticia, seccion de comentarios, etc. Al igual que la sección también puede contener header,p,footer,etc. </p>
+                    <p>Aside: Contiene información relacionada con el contenido principal, como anuncios, links, etc.</p>
+                    <p>Header:Es usado para definir la seccion inicial de una página, usualmente contiene el logo, el menú de navegación,etc</p>
+                    <p>Footer: Se usa en la parte inferior de la página y usualmente contiene información de los contactos, copyright, etc</p>
+                <h4>Create an unordered list. Create an ordered list.</h4>
+                    <p>Unorder list</p>
+                        <ul>
+                            <li>Pin Pong</li>
+                            <li>Tenis</li>
+                            <li>Fútbol</li>
+                            <!--<p>Item 4</p>-->
+                        </ul>
+                    <p>Order list</p>
+                        <ol>
+                            <li>Comparar ingredientes</li>
+                            <li>Cocinas</li>
+                            <li>Comer</li>
+                        </ol>
+                <h4>Create a basic table using html:</h4>
+                        <table border="5">
+                            <tr>
+                                <th>Estudiante</th>
+                                <th>Carrera</th>
+                                <th>Edad</th>
+                                <th>Calificación</th>
+                            </tr>
+                            <tr>
+                                <td>Sebastián</td>
+                                <td>ITC</td>
+                                <td>21</td>
+                                <td>100</td>
+                            </tr>
+                            <tr>
+                                <td>Carlos</td>
+                                <td>IRS</td>
+                                <td>28</td>
+                                <td>90</td>
+                            </tr>
+                        </table>
+        <h2>CSS</h2>
+            <h3>Introduction</h3>
+                <h4>What is CSS?</h4>
+                    <p>CSS al igual que HTML, es un lenguaje de fron-end que se especializa principalmente en darle estilo a nuestra página web. </p>
+                <h4>What is the purpose of CSS?</h4>
+                    <p>Nos ayuda a proporcionar ciertas caracteristicas para nuestro sitio, como en el color de fondo, el tipo de letra, el tamaño, la posicion de los objetos, etc.</p>
+                <h4>How do you apply a CSS to an HTML (explain the 3 options)</h4>
+                <p>Para aplicar css, se puede:</p>
+                    <ul>
+                        <li>Crear un archivo .css y vincularlo al archivo html</li>
+                        <li>Dentro del HTML, en cada linea que queramos usar CSS llamamos al atributo style: "p style="color: blue; font-size: 20px;">Texto Azul." </li>
+                        <li>Colocar una etiqueta "style", dentro del archivo html, lo cual nos permite utilizar css </li>
+                    </ul>
+                <h4>What is a selector?</h4>
+                <p>Un selector es un patrón de elementos que nos permite seleccionar un determinado tipo de  elementos en el archivo, para poderles hacer modificaciones de estilo específicas para esee grupo</p>
+                <h4>What is a CSS rule?</h4>
+                <p>Una regla CSS es un conjunto de instrucciones que especifican como se debe de estilizar un específico grupo de elementos, Este esta conformado por dos partes, el selector(determina los elementos específicos) y el bloque de declaracion o propiedades (se ponen las propiedades de estilo que se desean) </p>
+                <h4>Play the 32 levels of https://flukeout.github.io/</h4>
+                <p>Done!</p>
+                <h4>Play the 24 levels of https://flexboxfroggy.com/</h4>
+                <p>Done!</p>    
+            <br/>
+            <h3>Basic CSS</h3>
+                <h4>Explain a:	</h4>
+                <ul>
+                    <li>Tag Selector: Es un seleccionador que "selecciona" elementos según su etiqueta, ya sea "h1","h2","p", etc</li>
+                    <li>Class Selector: Slecciona los elementos que pertenecen a una clase en especifico, su sintaxis es ".nombre_de_la_clase"</li>
+                    <li>Tag and Class Selector: Es un tipo  de selector que combina los dos anteriores, es decir que selecciona elementos de cierto tipo que pertenecen a cierta clase</li>
+                    <li>Id Selector: Es un tipo de selector que selecciona elementos con un atributo de id, lo que significa que cierto elemento tiene un id y ciertos estilos elegidos para ese id</li>
+                </ul>
+                <h4>What is a class? What is an id? How are they related to CSS?</h4>
+                <ol>
+                    <i>Una clase es un identificador reusable que puede ser asignado a múltiples elementos, es útil a la hora de aplicar estilos a diferentes elementos.</i>
+                    <i>Un id es un identificador único que usualmente se le asigna a un solo elemento en la página</i>
+                    <i>Estos dos son relacionados a CSS ya que nos permiten aplicar estilos a ciertos elementos de una página web</i>
+                </ol>
+                <h4>Explain the CSS Box Model? Show an example.</h4>
+                <p>Es un módulo que nos permite determinar cóo los elementos de una página web están estructurados, incluyendo el área de contenido, rellenos, los bordes y los márgenes. Estas modificaciones se pueden poner desde la etiqueta "style", en el "head" </p>
+                <p>EJEMPLO:</p>
+                    <div id="box">
+                        MODELO BOX
+                    </div>
+
+                <h4>How can you change the font color using CSS?</h4>
+                <p>Los colores de una fuente se pueden modificar usando la propiedad "color", por ejemplo:</p>
+                    <div id="font">
+                        LETRA VERDE
+                    </div>
+    </body> 
+</html>

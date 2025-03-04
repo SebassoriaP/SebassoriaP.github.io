@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-color: antiquewhite;
+            }
+            #encabezado{
+                background-color: blueviolet;
+            }
+
+            #encabezado h1{
+                background-color: chartreuse;
+            }
+            .parrafo{
+                color: darkblue;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="encabezado">
+        <h1>Index</h1>
+        <br/>
+        <h2>Wow</h2>
+        </div>
+    
+            
+
+    </body>
+    <script>
+
+        let x=10;
+        console.log(x);
+
+        let s={"nombre":"Sebastian","apellido":"Soria"};
+        console.log(s);
+
+        let t = document.getElementsByTagName ("h1");
+        console.log(t);
+
+        let a = document.getElementById("encabezado");
+        console.log(a);
+
+
+        let r=document.createElement("h1");
+        console.log(r);
+
+        let v=document.body.appendChild(r);
+        console.log(v);
+
+        let b = document.createTextNode("Hola Sebas");
+
+        console.log(b);
+
+        let d =document.createElement("p");
+
+        a.setAttribute("class","lol");
+        console.log(a);
+
+        a.addEventListener("click", function() {
+        console.log("Hola");
+        });
+
+        async function Museum(){
+            let respuesta=await fetch("https://collectionapi.metmuseum.org/public/collection/v1/objects/444455");
+            console.log(respuesta);
+
+            let respuestaJSON = await respuesta.json();
+            console.log(respuestaJSON.GalleryNumber);
+            //console.log(respuestaJSON.PrimaryImage);
+        }
+
+        Museum();
+
+        let c = document.createElement("p");
+       // let e = document.createTextNode(respuestaJSON.GalleryNumber );
+        //c.appendChild(e);
+        //document.body.appendChild(c);
+
+        let f = document.createElement("a");
+
+
+
+    </script>
+
+</html>

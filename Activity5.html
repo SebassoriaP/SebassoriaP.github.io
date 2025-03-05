@@ -15,6 +15,14 @@
             .parrafo{
                 color: darkblue;
             }
+
+            img{
+                width: 300px;
+                height: 300px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
         </style>
     </head>
     <body>
@@ -35,30 +43,18 @@
         let s={"nombre":"Sebastian","apellido":"Soria"};
         console.log(s);
 
-        let t = document.getElementsByTagName ("h1");
-        console.log(t);
-
+      
         let a = document.getElementById("encabezado");
         console.log(a);
-
-
-        let r=document.createElement("h1");
-        console.log(r);
-
-        let v=document.body.appendChild(r);
-        console.log(v);
-
-        let b = document.createTextNode("Hola Sebas");
-
-        console.log(b);
-
-        let d =document.createElement("p");
 
         a.setAttribute("class","lol");
         console.log(a);
 
-        a.addEventListener("click", function() {
+        a.addEventListener("click", function () {
+
         console.log("Hola");
+        Museum();
+
         });
 
         async function Museum(){
@@ -66,18 +62,26 @@
             console.log(respuesta);
 
             let respuestaJSON = await respuesta.json();
-            console.log(respuestaJSON.GalleryNumber);
-            //console.log(respuestaJSON.PrimaryImage);
+            const Numb = respuestaJSON.GalleryNumber;
+            const IMG = respuestaJSON.primaryImage;
+            console.log(IMG);
+
+            const s = document.createElement("img");
+            s.src = IMG;
+            document.body.appendChild(s);
+
+            const n=document.createElement("p");
+            n.textContent = `Gallery Number: ${Numb}`;
+            document.body.appendChild(n);
         }
 
-        Museum();
 
-        let c = document.createElement("p");
+        //let c = document.createElement("p");
        // let e = document.createTextNode(respuestaJSON.GalleryNumber );
         //c.appendChild(e);
         //document.body.appendChild(c);
 
-        let f = document.createElement("a");
+        //let f = document.createElement("a");
 
 
 

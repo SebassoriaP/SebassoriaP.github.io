@@ -4,12 +4,17 @@
         <style>
             body{
                 background-color: antiquewhite;
+                
+            }
+
+            h2{
+                color: white;
             }
             #encabezado{
                 background-color: blueviolet;
             }
 
-            #encabezado h1{
+            h1{
                 background-color: chartreuse;
             }
             .parrafo{
@@ -23,19 +28,31 @@
                 align-items: center;
                 justify-content: center;
             }
+
+            #CHANGE {
+                background-color: yellow;
+            }
+
         </style>
     </head>
     <body>
-        <div id="encabezado">
-        <h1>Index</h1>
+        <div  id = "CHANGE">
+        <h1 onclick="cambiarTexto()"> No me aplastes :/</h1>
+        </div>
         <br/>
-        <h2>Wow</h2>
+        <div id="encabezado">
+        <h2>!Click - Museo</h2>
         </div>
     
             
 
     </body>
     <script>
+
+        function cambiarTexto() {
+            let cambio = document.getElementById("CHANGE");
+            cambio.textContent = "¡siiiiiiii :0"; 
+        }
 
         let x=10;
         console.log(x);

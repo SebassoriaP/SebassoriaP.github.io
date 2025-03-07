@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Donantes</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lista de Donantes</h1>
+   
+    <a href="/">Bienvenida</a>
+    <a href="/escuelas">Escuelas</a>
+    <br/>
+    <button onclick="obtenerDonantes()">Mostrar Donantes</button>
+    <script>
+        async function obtenerDonantes() {
+            //Agregar el url adecuado
+          const listaDonantes= await fetch("http://localhost:1984/api/donantes");
+          const jsonLD=await listaDonantes.json();
+          console.log(jsonLD);
+          //Muestra los donantes en el html
+          const s = document.createElement("p");
+          s.textContent = jsonLD.donante[0].nombre;
+          document.body.appendChild(s);
+
+          const w = document.createElement("p");
+          w.textContent = jsonLD.donante[1].nombre;
+          document.body.appendChild(w);
+
+        }
+
+
+    </script>
+</body>
+</html>

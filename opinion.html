@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Opinion</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <h1>Opinión</h1>
+    <a href="/">Bienvenida</a>
+    <br/>
+    <button onclick="opinionIMG()">Mostrar Imágen</button>
+    <script>
+        async function opinionIMG() {
+
+            let p = document.createElement("img");
+            p.src = "https://sebassoriap.github.io/chistoso.png";
+            document.body.appendChild(p);
+        }
+    </script>
+</body>
+</html>

@@ -158,7 +158,7 @@ import fs from 'fs';
       //Agrega una ruta /opinion
       //Trata de agregar una imagen a opinion.html
       //Explica si la puedes ver, en caso negativo ¿qué crees que pase?
-
+        //Si se puede ver :)
 
       // Lee el siguiente artículo y responde 
       //https://www.aljazeera.com/opinions/2019/3/13/digital-colonialism-is-threatening-the-global-south

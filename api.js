@@ -7,7 +7,7 @@ async function API() {
     const data = await url.json(); 
     console.log(data);  
 
-    image = data.hdurl;
+    image = data.url;
     console.log(image);
 
     let s=document.createElement("img");

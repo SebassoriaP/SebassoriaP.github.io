@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pachamama</title>
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Meta descripción y favicon opcionales -->
+  <meta name="description" content="Pachamama: Voces que defienden la tierra. Explora los territorios TICCA y las comunidades que protegen el futuro del planeta en Ecuador." />
+  <link rel="icon" href="https://madame-melon.com/cdn/shop/articles/divinite-pachamama.jpg?v=1643380995" type="image/png" />
+</head>
+
+<body>
+  <!-- Menú Superior -->
+  <header>
+    <nav aria-label="Menú principal">
+      <ul>
+        <li><a href="#home">Inicio</a></li>
+        <li><a href="#map">Territorios</a></li>
+        <li><a href="#communities">Comunidades</a></li>
+        <li><a href="#about">Acerca de</a></li>
+        <li><a href="#why">¿Por qué protegerlos?</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Pantalla de Inicio -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Pachamama: Voces que defienden la tierra</h1>
+      <p>
+        Explora los territorios de vida y conoce las comunidades que protegen el
+        futuro del planeta.
+      </p>
+      <a href="#map" class="btn">Explorar territorios</a>
+    </div>
+  </section>
+
+  <!-- Mapa interactivo (p5.js) -->
+<section id="map" class="section-colored">
+  <h2>Mapa de Territorios</h2>
+  <p>Explora los territorios TICCA en Ecuador.</p>
+
+  <!-- Panel verde animado (p5) como contenedor -->
+  <div class="map-panel">
+    <div id="territories-bg" aria-hidden="true"></div> <!-- p5 canvas vive aquí -->
+
+    <!-- Contenido encima del fondo -->
+    <div class="Loc">
+      <!-- Contenedor para el canvas de p5 (globo) -->
+      <div id="sketch-map" class="map-placeholder" aria-hidden="true"></div>
+
+      <!-- Imagen lateral -->
+      <img
+        src="https://report.territoriesoflife.org/wp-content/uploads/2021/05/MAPA2_TITICCASNAP_cut-scaled.jpg"
+        alt="Territorios"
+        loading="lazy"
+        decoding="async"
+      />
+    </div>
+  </div>
+</section>
+
+<!-- ¿Por qué protegerlos? -->
+<section id="why" class="why">
+  <div class="why-wrap">
+    <h2>¿Por qué proteger nuestros territorios de vida?</h2>
+
+    <p class="why-lead">
+      En Ecuador y América Latina, los territorios indígenas y comunitarios enfrentan
+      presiones crecientes por actividades extractivas (petróleo, minería, monocultivos) y
+      por la violencia contra quienes los defienden. Protegerlos es esencial para la
+      biodiversidad, el clima, el agua y la continuidad de culturas vivas que sostienen
+      formas propias de gobernanza del territorio.
+    </p>
+
+    <div class="why-grid">
+      <article class="why-card">
+        <h3>Riesgos y amenazas</h3>
+        <p>
+          Los defensores ambientales sufren criminalización, amenazas y homicidios.
+          Global Witness registra asesinatos cada año en la región y documenta casos en Ecuador
+          durante 2012–2024, incluidos recientes, lo que evidencia un patrón preocupante. 
+        </p>
+        <ul class="why-bullets">
+          <li>Presión por petróleo, minería y agronegocio en la Amazonía. </li>
+          <li>Incumplimientos y tensiones tras el referéndum para frenar el petróleo en Yasuní. </li>
+        </ul>
+      </article>
+
+      <article class="why-card">
+        <h3>Quiénes están actuando</h3>
+        <p>
+          La <strong>Red de Territorios de Vida – TICCA Ecuador</strong>, acompañada por
+          <strong>Fundación ALDEA</strong>, fortalece la libre determinación y la gobernanza de
+          comunidades para documentar, sostener y defender sus territorios. A nivel global,
+          el <strong>ICCA Consortium</strong> articula esta defensa en más de 80 países. 
+        </p>
+        <ul class="why-bullets">
+          <li><em>Territorios de vida</em>: áreas gobernadas y conservadas por pueblos y comunidades.</li>
+          <li>Procesos de registro, documentación y apoyo intergeneracional. </li>
+        </ul>
+      </article>
+
+      <article class="why-card">
+        <h3>¿Por qué importa?</h3>
+        <p>
+          Donde hay autogobierno comunitario suele haber mejor conservación y cuidado del agua,
+          suelos y bosques; además, se resguardan lenguas, medicinas tradicionales y economías
+          solidarias. Preservar estas culturas es clave para el país y para afrontar la crisis
+          climática de forma justa. 
+        </p>
+        <ul class="why-bullets">
+          <li>Yasuní: decisión histórica de mantener crudo bajo tierra; su cumplimiento sigue en disputa. </li>
+          <li>Defender es un derecho humano; necesitamos protección efectiva para quienes lo ejercen.</li>
+        </ul>
+      </article>
+    </div>
+
+    <div class="why-cta">
+      <p>
+        Súmate a difundir el mensaje: comparte este sitio, apoya a organizaciones que
+        acompañan a las comunidades y reconoce a las y los defensores.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Comunidades -->
+ <section id="communities">
+  <h2>Comunidades</h2>
+
+  <div class="community-cards">
+    <!-- Kichwa -->
+    <article class="card" data-accordion>
+      <img
+        src="https://maguitosite.wordpress.com/wp-content/uploads/2017/08/vestimentaa.jpg?w=992&h=712"
+        alt="Comunidad Kichwa"
+        loading="lazy" decoding="async"
+      />
+      <div class="card-body">
+        <button class="card-toggle" aria-expanded="false" aria-controls="c-kichwa">
+          <h3>Comunidad Kichwa</h3>
+        </button>
+        <div id="c-kichwa" class="card-details" hidden>
+          <p>Ubicada principalmente en la Amazonía; resguarda ríos y bosques, y promueve prácticas tradicionales de manejo de territorio.</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- Shuar -->
+    <article class="card" data-accordion>
+      <img
+        src="https://tsuirimtravel.com/wp-content/uploads/2024/04/comunidad-shuar-en-naranjal-1.webp"
+        alt="Comunidad Shuar"
+        loading="lazy" decoding="async"
+      />
+      <div class="card-body">
+        <button class="card-toggle" aria-expanded="false" aria-controls="c-shuar">
+          <h3>Comunidad Shuar</h3>
+        </button>
+        <div id="c-shuar" class="card-details" hidden>
+          <p>Con fuerte arraigo amazónico, impulsan la defensa de sus territorios y la conservación de su cultura y lengua.</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- Andina -->
+    <article class="card" data-accordion>
+      <img
+        src="https://plan.org.ec/wp-content/uploads/2023/08/1-IMG_4078_.jpg"
+        alt="Comunidad Andina"
+        loading="lazy" decoding="async"
+      />
+      <div class="card-body">
+        <button class="card-toggle" aria-expanded="false" aria-controls="c-andina">
+          <h3>Comunidad Andina</h3>
+        </button>
+        <div id="c-andina" class="card-details" hidden>
+          <p>Preservan páramos, semillas nativas y prácticas agrícolas que sostienen la vida en altura.</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- Huancavilca -->
+    <article class="card" data-accordion>
+      <img
+        src="https://hablemosdeculturas.com/wp-content/uploads/2019/02/Huancavilca3.jpg"
+        alt="Comunidad Huancavilca"
+        loading="lazy" decoding="async"
+      />
+      <div class="card-body">
+        <button class="card-toggle" aria-expanded="false" aria-controls="c-huancavilca">
+          <h3>Comunidad Huancavilca</h3>
+        </button>
+        <div id="c-huancavilca" class="card-details" hidden>
+          <p>Con presencia histórica en la costa ecuatoriana, conservan vínculos con el mar y saberes de navegación y comercio.</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- Tsáchila -->
+    <article class="card" data-accordion>
+      <img
+        src="https://www.nanmagazine.com/wp-content/uploads/2021/06/Tsachilas-Web-06.jpg"
+        alt="Pueblo Tsáchila"
+        loading="lazy" decoding="async"
+      />
+      <div class="card-body">
+        <button class="card-toggle" aria-expanded="false" aria-controls="c-tsachila">
+          <h3>Pueblo Tsáchila</h3>
+        </button>
+        <div id="c-tsachila" class="card-details" hidden>
+          <p>Reconocidos por su identidad cultural en Santo Domingo; resguardan prácticas medicinales y saberes ancestrales.</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- Waorani -->
+    <article class="card" data-accordion>
+      <img
+        src="https://static.nationalgeographicla.com/files/styles/image_3200/public/dscf1540nk_wao_nemopare_retrato_pekes.jpg?w=1900&h=1267"
+        alt="Pueblo Waorani"
+        loading="lazy" decoding="async"
+      />
+      <div class="card-body">
+        <button class="card-toggle" aria-expanded="false" aria-controls="c-waorani">
+          <h3>Pueblo Waorani</h3>
+        </button>
+        <div id="c-waorani" class="card-details" hidden>
+          <p>Habitantes de la Amazonía; su defensa del bosque y su conocimiento del territorio son claves para la biodiversidad.</p>
+        </div>
+      </div>
+    </article>
+
+
+    
+  </div>
+</section>
+
+
+  <section id="about">
+    <h2>Acerca de Pachamama</h2>
+    <br>
+    <p>
+      Proyecto dedicado a visibilizar y proteger los territorios de vida en
+      Ecuador, inspirado en el trabajo de Fundación ALDEA, Global Witness y
+      TICCA Ecuador.
+    </p>
+
+    <div class="partners">
+      <img
+        src="https://images.squarespace-cdn.com/content/579745bd15d5dbda8ada061d/1477936582135-EM5CI0Q7AAETSGPHST0G/logo_ALDEA_ROJO.png?content-type=image%2Fpng"
+        alt="Fundación ALDEA"
+        class="partner-logo"
+      />
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Global_Witness_Logo_2025.png"
+        alt="Global Witness"
+        class="partner-logo"
+      />
+      <img
+        src="https://images.squarespace-cdn.com/content/v1/579745bd15d5dbda8ada061d/e647c1fb-33a6-42ad-8c0c-266a238b428a/logo-TICCA-ecuador.jpg"
+        alt="TICCA Ecuador"
+        class="partner-logo"
+      />
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <script defer src="https://cdn.jsdelivr.net/npm/p5@1.9.0/lib/p5.min.js"></script>
+  <script defer src="territories-bg-sketch.js"></script>
+  <script defer src="script.js"></script>
+</body>
+</html>

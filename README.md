@@ -30,4 +30,4 @@ A través de un diseño inmersivo con gráficos dinámicos en **p5.js**, se pres
 ## Sitio en linea
 
     El sitio actualmente ya se encuentra en línea y se lo puede encontrar en este link:
-    https://sebassoriap.github.io/pachamama/
+    https://sebassoriap.github.io/pacha_mama/
